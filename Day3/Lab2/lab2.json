@@ -1,0 +1,104 @@
+{
+    "library": {
+        "location": "Nasr City, Egypt",
+        "description": "this is the description",
+        "librarian": "this the librarian info",
+        "book": 
+        [
+        
+            {
+                "ISBN": "A_123",
+                "title": "BookOne",
+                "author": "AuthorName",
+                "preface": "this is the preface",
+                "part": [
+                    {
+                        "title": "PartOneBookOne",
+                        "chapters": [
+                            {
+                                "title": "ChapterOne",
+                                "summary": "this is the summary",
+                                "sections": [
+                                    {
+                                        "title": "SectionOne",
+                                        "p": [
+                                            "a paragraph",
+                                            "a paragraph"
+                                        ]
+                                    },
+                                    {
+                                        "title": "SectionTwo",
+                                        "p": [
+                                            "a paragraph",
+                                            "a paragraph"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "ChapterTwo",
+                                "summary": "this is the summary",
+                                "sections": [
+                                    {
+                                        "title": "SectionOne",
+                                        "p": [
+                                            "a paragraph",
+                                            "a paragraph"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+        
+            {
+                "ISBN": "B_456",
+                "title": "BookTwo",
+                "author": "AuthorName",
+                "preface": "this is the preface",
+                "part": [
+                    {
+                        "title": "PartOneBookTwo",
+                        "chapters": [
+                            {
+                                "title": "ChapterOne",
+                                "summary": "this is the summary",
+                                "sections": [
+                                    {
+                                        "title": "SectionOne",
+                                        "p": [
+                                            "a paragraph",
+                                            "a paragraph"
+                                        ]
+                                    },
+                                    {
+                                        "title": "SectionTwo",
+                                        "p": [
+                                            "a paragraph",
+                                            "a paragraph"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "ChapterTwo",
+                                "summary": "this is the summary",
+                                "sections": [
+                                    {
+                                        "title": "SectionOne",
+                                        "p": [
+                                            "a paragraph",
+                                            "a paragraph"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+        }
+    }
