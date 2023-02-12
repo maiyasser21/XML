@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BookStore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Book">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Title" type="xs:string" />
+              <xs:element name="Author" type="xs:string" />
+              <xs:element name="Date" type="xs:string" />
+              <xs:element name="ISBN" type="xs:unsignedShort" />
+              <xs:element name="Publisher" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="Category" type="Category"  default="fiction" />
+            <xs:attribute name="InStock" type="InStock"  default="false"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="Category">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="science"></xs:enumeration>
+        <xs:enumeration value="fiction"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="InStock">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="true"></xs:enumeration>
+        <xs:enumeration value="false"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
