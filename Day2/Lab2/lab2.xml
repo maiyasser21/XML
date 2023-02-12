@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="schema.xsd">
+    <info>
+        <location>this is the location</location>
+        <description>this is the desc</description>
+        <librarian>this is the librarian</librarian>
+
+    </info>
+    <book ISBN="A_123">
+        <title>this is the title</title>
+        <author Name="AuthorName"></author>
+        <preface>This is the Preface</preface>
+        <part id="PartOneBookOne">
+            <title>Part Title</title>
+            <chapter>
+                <title>Chapter Title</title>
+                <section Sid="SectionOneB1C1">
+                    <p>Paragraph One</p>
+                    <p>Paragraph Two</p>
+                    <p>Paragraph Three</p>
+                </section>
+                <summary>This is the chapter Summary</summary>
+            </chapter>
+            <chapter>
+                <title>Chapter Title</title>
+                <section Sid="SectionOneB1C2">
+                    <p>Paragraph One</p>
+                    <p>Paragraph Two</p>
+                    <p>Paragraph Three</p>
+                </section>
+                <summary>This is the chapter Summary</summary>
+            </chapter>
+            <chapter>
+                <title>Chapter Title</title>
+                <section Sid="SectionOneB1C3">
+                    <p>Paragraph One</p>
+                    <p>Paragraph Two</p>
+                   
+                </section>
+                <summary>This is the chapter Summary</summary>
+            </chapter>
+        </part>    
+    </book>
+    
+</library>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="info">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="location" type="xs:string" />
+              <xs:element name="description" type="xs:string" />
+              <xs:element name="librarian" type="xs:string" />
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="book">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title" type="xs:string" />
+              <xs:element name="author">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="preface" type="xs:string" />
+              <xs:element name="part">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="title" type="xs:string" />
+                    <xs:element maxOccurs="unbounded" name="chapter">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="title" type="xs:string" />
+                          <xs:element name="section">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="p" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="Sid" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="summary" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ISBN" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
